@@ -1,13 +1,14 @@
 $(function(){
-	$(".sections .api-index").eq(0).show(3000);
+	$(".sections .api-index").eq(0).show(1000);
 
 	$(".xia>a").click(function(e){
 		var xia = $(this).closest(".xia");
 		if(xia.hasClass("shang")){
-			xia.removeClass("shang").find("ul").hide();
+			xia.removeClass("shang").find("ul").hide(1000);
 		}else{
-			xia.addClass("shang").find("ul").show();
+			xia.addClass("shang").find("ul").show(1000);
 		}
+		// xia.addClass("shang").find("ul").toggle(xia.hasClass("shang"),3000);
 	})
 	$(".api-list a").click(function(){
 		$(".api-list .active").removeClass("active");

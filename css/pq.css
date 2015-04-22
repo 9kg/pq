@@ -1,7 +1,7 @@
 html,body{
 	height: 100%;
 }
-body,h1,h2,h3,h4,h5,h6,ul{
+body,h1,h2,h3,h4,h5,h6,ul,p{
 	margin: 0;
 	padding: 0;
 }
@@ -32,7 +32,7 @@ body{
 	  background-color: #f9f9f9;
 	  color: #4e546b;
 }
-
+/*api-index*/
 .api-list{
 	position: fixed;
 	top:0;
@@ -108,14 +108,104 @@ ul.api-index li a{
 
 
 /*api-content*/
+.bg-eee{
+	background-color: #eee;
+}
+.bgeee-i{
+	background-color: #eee;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
 .api-content{
 	margin-left: 230px;
 	overflow: hidden;
 	position: relative;
 	height: 100%;
+	background-color: #f3f3ef;
 }
-.api-item{
+.api-item,.homepage{
 	position: relative;
-	background-color: #ccc;
 	height: 100%;
+	padding: 0 100px;
+	overflow: auto;
+	line-height: 1.2em;
+}
+.homepage{
+	padding: 0;
+}
+.homepage .content{
+	padding-top: 150px;
+}
+.homepage .content h1{
+	text-align: center;
+	line-height: 2em;
+}
+.homepage .foot{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	background-color: #7f7f7f;
+	color: #fff;
+	letter-spacing: 0.1em;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+}
+
+.api-item>*{
+	width: 1000px;
+	padding: 10px 15px;
+	background-color: #efefd7;
+}
+.api-item>*:last-child{
+	padding-bottom: 30px;
+}
+.title{
+	position: relative;
+	margin-top: 15px;
+	padding-top: 20px;
+	background-color: #ccc;
+}
+.title .option-title{
+	float: left;
+	color: #2666A1;
+	font-weight: bold;
+}
+.title .option-type{
+	float: right;
+}
+.title .option-default{
+	float: right;
+	margin-left: 300px;
+	padding: 10px 0;
+	clear: both;
+}
+
+p{
+	font-family: Arial;
+	color: #333;
+}
+.desc span{
+	color: #f37;
+}
+
+.api-item>.code{
+	font-weight: bold;
+	margin-top: 50px;
+	background-color: #ccc;
+}
+.api-item table{
+	width: 100%;
+	border: 1px dotted #aaa;
+	padding: 15px;
+	line-height: 1.3em;
+}
+.api-item table .gutter{
+	border-right: 3px solid #59c;
+	padding-right: 2px;
+}
+.api-item table .code{
+	padding: 0 5px;
 }

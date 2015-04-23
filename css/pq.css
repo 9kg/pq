@@ -145,6 +145,19 @@ ul.api-index li a{
 	text-align: center;
 	line-height: 2em;
 }
+.homepage .content .author{
+	text-align: center;
+	margin-top: 100px;
+}
+.author span{
+	color:#d72;
+	font-weight: bold;
+	padding-right: 20px;
+}
+.author a{
+	font-style: italic;
+	text-decoration: underline;
+}
 .homepage .foot{
 	position: absolute;
 	bottom: 0;

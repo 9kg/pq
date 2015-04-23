@@ -181,6 +181,8 @@ ul.api-index li a{
 	color: #2666A1;
 	font-weight: bold;
 	margin-right: 300px;
+	font-size: 1.4em;
+  	line-height: 1.4em;
 }
 .title .option-type{
 	float: right;

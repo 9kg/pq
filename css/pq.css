@@ -49,20 +49,23 @@ body{
 .api-list{
 	background-color: #2b2f3e;
 }
-.sections{
-	margin-bottom: 15px;
-}
 .sections .api-index{
 	margin-bottom: 25px;
 }
 .sections h2{
 	font-size: 1.2em;
-	padding-left: 15px;
+	padding: 15px 0px 5px 0px;
 	color: #eee;
 	border-bottom: 1px solid #aaa;
-	margin: 5px 0;
-	padding-bottom: 3px;
 	cursor: pointer;
+	text-align: center;
+}
+.sections.hp a{
+	color: #fff;display:block;font-size:2.3em;padding-bottom:10px;
+}
+.sections h2:hover,.sections h2:hover a{
+	background-color: #f3f3ef;
+	color: #2b2f3e;
 }
 .sections .api-index{
 	display: none;
@@ -72,8 +75,8 @@ body{
 	display: block;
 }
 .api-index li:hover>a{
-	color: #fff;
-	background-color: #ff404b;
+	color: #2b2f3e;
+	background-color: #f3f3ef;
 }
 ul.api-index li a{
 	padding-left: 15px;
@@ -86,12 +89,12 @@ ul.api-index li a{
 	padding-left: 50px;
 }
 .api-index li ul li:hover>a{
-	color: #fff;
-	background-color: #c9793f;
+	color: #2b2f3e;
+	background-color: #efefd7;
 }
 .api-index li.xia>a:after{
 	content: ' ↓';
-  	color: #ff0;
+  	color: #f00;
   	font-size: 1.2em;
 }
 .api-index li.xia:hover>a{
@@ -99,17 +102,21 @@ ul.api-index li a{
 }
 .api-index li.shang>a:after{
   	content: ' ↑';
-  	color: #ff0;
+  	color: #f00;
   	font-size: 1.2em;
 }
-.active{
-	color: #cf7!important;
+.api-index .active{
+	color: #2b2f3e!important;
+	background-color: #f3f3ef;
 	text-decoration: underline;
 }
 .xia>.active{
-	color: #cf7!important;
+	color: #2b2f3e!important;
+	background-color: #f3f3ef;
 	text-decoration: none;
 }
+
+
 
 
 /*api-content*/
@@ -218,7 +225,18 @@ ul.api-index li a{
 .desc span{
 	color: #a5f;
 }
-
+/*desc 下的 function*/
+.container ul{
+	padding-left: 30px;
+	line-height: 1.4em;
+	
+}
+.container>ul ul li{
+	list-style-type: inherit;
+}
+.container>ul li b{
+	color: #293;
+}
 /*code Example Title*/
 .container>.code{
 	font-weight: bold;

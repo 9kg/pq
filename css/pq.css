@@ -30,6 +30,7 @@ sup{
 }
 html{
 	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
 }
 body{
 	font-family: "Helvetica Neue",Helvetica,"Microsoft YaHei",Arial,sans-serif;
@@ -53,7 +54,7 @@ body{
 	margin-bottom: 25px;
 }
 .sections h2{
-	font-size: 1.2em;
+	font-size: 1.6rem;
 	padding: 15px 0px 5px 0px;
 	color: #eee;
 	border-bottom: 1px solid #aaa;
@@ -61,7 +62,10 @@ body{
 	text-align: center;
 }
 .sections.hp a{
-	color: #fff;display:block;font-size:2.3em;padding-bottom:10px;
+	color: #fff;
+	display:block;
+	font-size:2.8rem;
+	padding-bottom:10px;
 }
 .sections h2:hover,.sections h2:hover a{
 	background-color: #f3f3ef;
@@ -80,7 +84,7 @@ body{
 }
 ul.api-index li a{
 	padding-left: 15px;
-	line-height: 1.5em;
+	line-height: 2em;
 }
 .api-index li ul{
 	display: none;
@@ -220,7 +224,7 @@ ul.api-index li a{
 /*description*/
 .desc{
 	margin-bottom: 20px;
-	line-height: 1.4em;
+	line-height: 2.0em;
 }
 .desc span{
 	color: #a5f;
@@ -276,5 +280,5 @@ code.string{
 /*desc 4 code*/
 .container>.code+p,.container>.code+p+div+br+p{
 	font-style: italic;
-	color: #390;
+	color: #370;
 }

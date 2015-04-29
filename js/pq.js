@@ -17,4 +17,9 @@ $(function(){
 	$(".sections h2").click(function(){
 		$(this).next(".api-index").toggle("slow");
 	});
+
+	//全屏
+	$(".util li a").eq(1).click(function(){
+		$("body").addClass("full-screen");
+	});
 })

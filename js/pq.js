@@ -3,10 +3,12 @@ $(function(){
 
 	$(".xia>a").click(function(e){
 		var xia = $(this).closest(".xia");
-		if(xia.hasClass("shang")){
-			xia.removeClass("shang").find("ul").hide(1000);
-		}else{
-			xia.addClass("shang").find("ul").show(1000);
+		if(!$(this).is(".full-screen .xia>a")){
+			if(xia.hasClass("shang")){
+				xia.removeClass("shang");
+			}else{
+				xia.addClass("shang");
+			}
 		}
 		// xia.addClass("shang").find("ul").toggle(xia.hasClass("shang"),3000);
 	})
@@ -19,7 +21,13 @@ $(function(){
 	});
 
 	//全屏
-	$(".util li a").eq(1).click(function(){
-		$("body").addClass("full-screen");
+	$(".util li.layout a").click(function(){
+		if($("body").hasClass("full-screen")){
+			$("body").removeClass("full-screen");
+			$(this).text("Full Screen");
+		}else{
+			$("body").addClass("full-screen");
+			$(this).text("Normal");
+		}
 	});
 })

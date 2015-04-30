@@ -107,6 +107,9 @@ sup{
   	color: #f00;
   	font-size: 2rem;
 }
+.api-index li.shang ul{
+	display: block;
+}
 .api-index .active{
 	color: #2b2f3e!important;
 	background-color: #f3f3ef;
@@ -222,6 +225,7 @@ sup{
 /*description*/
 .desc{
 	margin-bottom: 20px;
+	font-size: 1.6rem;
 	line-height: 1.5em;
 	letter-spacing: 0.5px;
 }
@@ -231,8 +235,6 @@ sup{
 /*desc 下的 function*/
 .container ul{
 	padding-left: 30px;
-	line-height: 20px;
-	
 }
 .container>ul ul li{
 	list-style-type: inherit;
@@ -263,6 +265,11 @@ sup{
 }
 .container table .code{
 	padding: 0 5px;
+}
+.container table .gutter .line,.container table .code .container .line{
+	height:24px;
+	line-height: 24px;
+	font-size: 14px;
 }
 code{
 	color: #057;
@@ -302,6 +309,9 @@ code.string{
 	padding: 3px 7px;
 	border:1px solid #fff;
 }
+.util li.index{
+	display: none;
+}
 .util li a{
 	color: #fff;
 }
@@ -311,10 +321,14 @@ code.string{
 .full-screen{
 	overflow: hidden;
 }
+.full-screen .util li.index{
+	display: inline-block;
+}
 .full-screen .api-list{
 	position: static;
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
 }
 .full-screen .api-content{
 	margin-left: 0;
@@ -325,9 +339,10 @@ code.string{
 }
 .full-screen .sections>ul{
 	display: block;
+	text-align: center;
 }
 .full-screen .sections>ul>li{
-	width: 150px;
+	width: 165px;
 	height: 34px;
 	display: inline-block;
 	vertical-align: middle;
@@ -336,22 +351,39 @@ code.string{
 	*display: inline;
 	white-space: nowrap;
 	position: relative;
+	text-align: left;
+}
+.full-screen .sections>ul>li>a{
+	padding-left: 5px;
 }
 .full-screen .sections li li a{
 	padding-right: 20px;
 }
-.full-screen .sections>ul>li:hover ul{
+.full-screen .sections>ul>.xia:hover ul{
 	position: absolute;
 	margin-left: 150px;
 	margin-top: -34px;
 	display: block;
-	background-color: #fff;
+	background-color: #3b3f4e;
 	max-height: 400px;
 	overflow-x:hidden;
 	overflow-y:auto;
 	z-index: 19;
+	border: 1px solid #f3f3ef;
+}
+.full-screen .sections>ul>.xia:hover ul a{
+	padding-left: 5px;
 }
 .full-screen .sections:first-child{
 	width: 100%;
 	clear: both;
+}
+.full-screen .api-index li.shang ul{
+	display: none;
+}
+.full-screen .api-index li.shang>a:after{
+  	content: ' ↓';
+}
+.full-screen .sections>ul>li.xia:hover>a:after{
+	content: ' ↑';
 }

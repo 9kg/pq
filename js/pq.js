@@ -4,20 +4,15 @@ $(function(){
 	$(".xia>a").click(function(e){
 		var xia = $(this).closest(".xia");
 		if(!$(this).is(".full-screen .xia>a")){
-			if(xia.hasClass("shang")){
-				xia.removeClass("shang");
-			}else{
-				xia.addClass("shang");
-			}
+			xia.toggleClass("shang").find("ul").slideToggle("slow");
 		}
-		// xia.addClass("shang").find("ul").toggle(xia.hasClass("shang"),3000);
 	})
 	$(".api-list a").click(function(){
 		$(".api-list .active").removeClass("active");
 		$(this).addClass("active");
 	});
 	$(".sections h2").click(function(){
-		$(this).next(".api-index").toggle("slow");
+		$(this).next(".api-index").slideToggle("slow");
 	});
 
 	//全屏
@@ -25,9 +20,13 @@ $(function(){
 		if($("body").hasClass("full-screen")){
 			$("body").removeClass("full-screen");
 			$(this).text("Full Screen");
+			$(this).attr("title","全屏显示");
+			$(".sections .api-index").slideUp("slow");
 		}else{
 			$("body").addClass("full-screen");
 			$(this).text("Normal");
+			$(this).attr("title","正常显示");
+			$(".sections .api-index").slideDown("slow");
 		}
 	});
 })

@@ -1,5 +1,6 @@
 /*reset and global*/
 html{
+	font-size: 16px;
 	font-size: 62.5%;
 	-webkit-font-smoothing: antialiased;
 }
@@ -8,8 +9,6 @@ html,body{
 }
 body{
 	font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 16px;
-	font-size: 1.6rem;
 	background-color: #f9f9f9;
 	color: #333;
 }
@@ -139,6 +138,7 @@ sup{
 	position: relative;
 	height: 100%;
 	background-color: #fff;
+	font-size: 1.6rem;
 }
 .api-item,.homepage{
 	position: relative;
@@ -324,7 +324,7 @@ code.string{
 .util li a{
 	color: #fff;
 	font-size: 1.6rem;
-	line-height: 1.6rem;
+	line-height: 20px;
 }
 
 

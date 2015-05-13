@@ -66,7 +66,7 @@ sup{
 	padding-bottom:10px;
 }
 .sections h2:hover,.sections h2:hover a{
-	background-color: #f3f3ef;
+	background-color: #fff;
 	color: #2b2f3e;
 }
 .sections .api-index{
@@ -82,7 +82,7 @@ sup{
 }
 .api-index li:hover>a{
 	color: #2b2f3e;
-	background-color: #f3f3ef;
+	background-color: #fff;
 }
 .api-index .xia ul{
 	display: none;
@@ -92,7 +92,7 @@ sup{
 }
 .api-index li ul li:hover>a{
 	color: #2b2f3e;
-	background-color: #efefd7;
+	background-color: #fff;
 }
 .api-index li.xia>a:after{
 	content: ' ↓';
@@ -109,12 +109,12 @@ sup{
 }
 .api-index .active{
 	color: #2b2f3e!important;
-	background-color: #f3f3ef;
+	background-color: #fff;
 	text-decoration: underline;
 }
 .xia>.active{
 	color: #2b2f3e!important;
-	background-color: #f3f3ef;
+	background-color: #fff;
 	text-decoration: none;
 }
 
@@ -138,7 +138,7 @@ sup{
 	overflow: hidden;
 	position: relative;
 	height: 100%;
-	background-color: #f3f3ef;
+	background-color: #fff;
 }
 .api-item,.homepage{
 	position: relative;
@@ -190,7 +190,7 @@ sup{
 	padding-bottom: 50px;
 }
 .api-item>.container>*{
-	background-color: #CBDFD7;
+	background-color: #E2E6F0;
 	padding: 15px;
 	color: #0F1C5F;
 }
@@ -202,11 +202,11 @@ sup{
 	background-color: #47507C;
 	border-radius: 7px 7px 0 0;
 
-	color: #CBDFD7;
+	color: #E2E6F0;
 }
 .title .option-title{
 	float: left;
-	color: #CBDFD7;
+	color: #E2E6F0;
 	font-weight: bold;
 	margin-right: 300px;
 	font-size: 2rem;
@@ -217,7 +217,7 @@ sup{
 }
 .title .option-type a{
 	color: #070E2F;
-	background-color: #CBDFD7;
+	background-color: #E2E6F0;
 	padding: 2px 10px;
 	font-style: italic;
 	border-radius: 30%;
@@ -256,7 +256,7 @@ sup{
 	background-color: #47507C;
 	border-radius: 7px 7px 0 0;
 	padding: 10px 15px;
-	color: #CBDFD7;
+	color: #E2E6F0;
 }
 /*code*/
 .container table{
@@ -305,8 +305,8 @@ code.string{
 	top: 15px;
 	right: 20px;
 	z-index: 9;
-	background-color: #666;
-	border:2px solid #666;
+	background-color: #47507C;
+	border:3px solid #47507C;
 }
 .util li{
 	display: inline-block;
@@ -316,7 +316,7 @@ code.string{
 	*display: inline;
 	white-space: nowrap;
 	padding: 3px 7px;
-	border:1px solid #fff;
+	border:1px dotted #fff;
 }
 .util li.index{
 	display: none;
@@ -378,7 +378,7 @@ code.string{
 	max-height: 400px;
 	overflow-x:hidden;
 	overflow-y:auto;
-	border: 1px solid #f3f3ef;
+	border: 1px solid #fff;
 	opacity: 0;
 	*zoom:1;
 
